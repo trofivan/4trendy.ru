@@ -1,0 +1,355 @@
+@CHARSET "UTF-8";
+
+/* BASE */
+html, body { margin: 0;	padding: 0; border:0; font-size:100%; font-family: Arial, tahoma, sans-serif; line-height: 1.4em }
+body { font-size: 87.5%; position: relative; min-width: 800px; background: url(../../img/bg_body.png); }
+
+.mini { font-size: 87.5% }
+.norm { font-size: 100% }
+.big { font-size: 120% }
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+.notbold { font-weight: normal; }
+.strike { text-decoration: line-through; }
+
+.lstn { list-style-type: none; }
+
+.gray {color:#666}
+.white {color:#fff}
+.red {color:#e80f8a;}
+	
+img, a { outline: none; }
+
+input[type=checkbox], input[type=radio] { vertical-align: baseline; }
+
+select, input { border-radius:3px; outline:0; margin:0.5em 0; padding:4px 5px; font-size:14px; border:1px solid #999; background:#fff; color:#444; }
+
+img {border: none; margin: 0; padding: 0; }
+
+a {color: #177cb4; cursor: pointer; outline: none;}
+a:HOVER { text-decoration: none; }
+a.das { text-decoration: none; border-bottom: 1px dashed; }
+a.das:HOVER { border: none; }
+a.none { text-decoration: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+div, tr, td, th { margin: 0; }
+
+p {margin:0; padding:0 0 1em 0;}
+
+h1 img {vertical-align: middle; }
+
+h1, h2, h3 {
+	margin:0; padding:0.6em 0 0.5em 0;
+	color: #29a3d1; font-weight: normal;
+}
+
+h1 a { color: #29a3d1; }
+
+h1 { font-size: 180%; text-transform: uppercase; text-shadow: #444 0px 1px 1px; }
+h2 { font-size: 150%; text-transform: uppercase; }
+h3 { font-size: 120%; }
+
+h2.with_icon { line-height:100px; padding-left: 100px; background-repeat: no-repeat; background-position: left center; }
+
+.dn { display: none !important; }
+.db { display: block }
+
+.clr { clear: both; }
+.nowrap { white-space: nowrap; }
+
+.fl { float: left; }
+.fr { float: right; }
+
+.p0 { padding: 0; }
+.m0 { margin:0; }
+.m0p0 { margin: 0; padding: 0; }
+
+.pt0 { padding-top:0; }
+.pl0 { padding-left: 0 }
+.pb0 { padding-bottom: 0; }
+
+.mt0 { margin-top: 0 }
+.ml0 { margin-left: 0 }
+.mb0 { margin-bottom: 0 }
+
+.pr { position: relative; }
+.pa { position: absolute; }
+
+.ts { text-shadow: 0px 1px 1px #444; }
+
+/* Кнопка */
+.btn { display: inline-block; border:0; font-size:1em; cursor: pointer; padding:0 1em; border-radius:5px; color:#fff; text-shadow: 0px 1px 1px #444; text-decoration:none; text-align: center; height: 30px; line-height: 30px; margin:0.5em 0; background: #fff url(../../img/bg_nav.png) bottom center; }
+.btn.fullwidth { display:block; }
+.btn:hover { opacity: 0.7 }
+/* END Кнопка */
+
+/********** Красивые таблицы  **********/
+
+table.tableStyle { width:100%; border-collapse: collapse; text-align: left; margin-bottom:15px; }
+
+table.tableStyle caption { 
+	text-align:left; 
+	margin:0; padding:0.6em 0 0.5em 0;
+	color: #29a3d1; font-weight: normal;
+	font-size: 150%; text-transform: uppercase;
+}
+
+table.tableStyle tr.pink, table.tableStyle tr.pink:hover { background-color:#ffc0cb !important; }
+table.tableStyle tr.green, table.tableStyle tr.green:hover { background-color:#c0e3c8 !important; }
+table.tableStyle tr.yellow, table.tableStyle tr.yellow:hover { background-color:#e3e269 !important; }
+
+table.tableStyle tr td, table.tableStyle tr th { padding: 0.4em 0.5em }
+table.tableStyle tr td.cntr { text-align: center; }
+
+/* Шапка таблицы */
+table.tableStyle thead tr th { 
+	color:#fff;  font-weight:bold; background: url(../../img/bg_nav.png) bottom center;
+	-moz-text-shadow: #000 0px 1px 3px; -webkit-text-shadow: #000 0px 1px 3px; text-shadow: #000 0px 1px 3px;
+}
+table.tableStyle thead tr th { border:1px solid #a0cee8; }
+
+/* Тело таблицы */
+table.tableStyle tbody tr:HOVER { background: #ebebeb !important }
+table.tableStyle tbody tr td { border:1px solid #a0cee8; }
+
+/********** END Красивые таблицы **********/
+
+/********** Красивые инпуты с иконками **************/
+.input-prepend { font-size:0; white-space:nowrap; margin-bottom:10px; vertical-align: top; }
+.input-prepend .add-on { display: inline-block; vertical-align: top; border-radius:3px 0 0 3px; height:20px; padding:4px 10px 4px 5px; font-size:14px; font-weight:normal; line-height: 20px; text-align:center; border:1px solid #999; border-right:0; background:url(../../img/input/separator.png) right center no-repeat; overflow:hidden; }
+.input-prepend input { display: inline-block; vertical-align:top; border-radius:0 3px 3px 0; width:250px; outline:0; margin-bottom: 0; height:20px; padding:4px 5px; font-size:14px; margin:0; border:1px solid #999; border-left:0; background:#fff; line-height:20px; color:#444; }
+.input-prepend input.placeholder { color:#aaa; }
+/********** END Красивые инпуты с иконками **************/
+
+/* END BASE */
+
+/* Кнопка НАВЕРХ */
+a#top { display:none; position: fixed; padding:1em; color:#666; text-decoration:none; left:0; top:0; height:100%;  }
+a#top span { position: absolute; display:none; top:0; left: 0; width:100%; height: 100%; background:#177CB4; }
+
+#container { position:relative; width:950px; margin: 0 auto; padding-top:2em; color:#444 }
+
+header { z-index:100; display: block; position:relative; width: 96%; margin:0 auto; }
+
+header a.auth { position: absolute; top:40px; right:0; }
+
+header #social { position:absolute; top:0; right:0; }
+header #social a { display: inline; margin-left:0.5em; }
+
+nav { z-index:50; position:relative; display: block; width:789px;  background: url(../../img/bg_nav.png) top center no-repeat; margin: 0 auto; margin-top:2em; }
+
+nav menu { position:relative; display:block; width:789px; height:88px; list-style-type: none; margin:0; padding:0; }
+nav menu li { display: block; float: left; height:88px; line-height:140px; width:157px; text-align: center; height: 88px; }
+nav menu li a { 
+	font-size:1.1em; color:#fff; text-decoration: none; text-transform: uppercase;
+	-moz-text-shadow: #000 0px 1px 3px; -webkit-text-shadow: #000 0px 1px 3px; text-shadow: #000 0px 1px 3px;	
+}
+nav menu li a:hover { color:#fff; }
+
+nav #sub { display:block; line-height:1.5em; position: relative; width:789px; padding:1em 0; margin:0 auto; margin-top:13px; background:url(../../img/submenu/bg.png) top center no-repeat; }
+nav #sub #arrow { position: absolute; display: block; left:0; top:-8px; width:157px; height: 9px; background: url(../../img/submenu/arrow.png) center no-repeat; }
+
+nav #sub #links { display: block; position:relative; width: 700px; margin: 0 auto; white-space: nowrap; overflow: hidden; }
+nav #sub #slider_block { display: block; width:3500px; }
+
+nav #sub #links ul { float:left; white-space:normal; width:700px; list-style-type:none; margin:0; padding:0; }
+nav #sub #links ul li { width:33%; float: left; }
+nav #sub #links ul li a { color:#373737; }
+
+section#content { display:block; position:relative; margin:0 auto; margin-top:2em; padding:18px; width:701px; background: url(../../img/content/bg_content.png) right repeat-y; }
+section#content #header { position: absolute; width:737px; height:12px; top:-12px; left:0; background:url(../../img/content/bg_content.png) left top no-repeat; }
+section#content #footer { position: absolute; width:701px; padding:0 18px; line-height:53px; height:36px; bottom:-36px; left:0; background:url(../../img/content/bg_content.png) left bottom no-repeat; }
+section#content #lenta { position: absolute; z-index:100; top:-15px; left:-2px; width:135px; height: 135px; background: url(../../img/content/lop_left_lenta.png) }
+
+section#content #news { display: block; position:relative; width:100%; }
+
+section#content #news #articles { position:relative; display: block; width: 354px; height: 270px; background: url(../../img/main_page/bg_articles.png); overflow: hidden; }
+section#content #news #articles article { display: block; position: absolute; top:5px; left:5px; width:344px; height:260px; text-align: center; }
+section#content #news #articles article div { color:white; width:334px; padding:5px; left:0; bottom:0; text-align:left; position: absolute; background: url(../../img/main_page/bg_div.png); }
+section#content #news #articles article div a { color:white; }
+section#content #news #articles article div h3 { margin:0; padding:0; padding-bottom:5px; }
+section#content #news #articles article div p { font-size:87.5%; line-height: 1.1em; margin-top:0; padding-top:0; }
+section#content #news #articles article div time { font-size:80%; color:#aaa }
+section#content #news #articles article div span.mini { padding-left:16px; height: 13px; background: url(../../img/main_page/author.png) left no-repeat; }
+section#content #news #articles article div a.mini { padding-left:19px; height: 13px; background: url(../../img/main_page/comments.png) left bottom no-repeat; }
+
+section#content #news #list { position: absolute; right:0px; top:0; display: block; width: 360px; }
+section#content #news #list #arrows { display: block; height: 225px; overflow: hidden; }
+section#content #news #list ul { display: block; margin:0; padding:0; }
+section#content #news #list ul li { display: block; height: 40px; overflow: hidden; margin:5px 0; }
+section#content #news #list ul li a { -moz-text-shadow: #fff 0px 1px 3px; -webkit-text-shadow: #fff 0px 1px 3px; text-shadow: #fff 0px 1px 3px; display: block; color:#6a6b6b; text-decoration:none; font-weight:bold; width:335px; height: 40px; line-height:40px; overflow:hidden; white-space:nowrap; padding:0; padding-left: 25px; background: url(../../img/main_page/arrows.png) bottom; }
+section#content #news #list ul li a.active { -moz-text-shadow: #000 0px 1px 3px; -webkit-text-shadow: #000 0px 1px 3px; text-shadow: #000 0px 1px 3px; color:white; background-position: top; }
+section#content #news #list #navigation { display:block; height:25px; line-height:25px; width:335px; margin-top:15px; padding-left:25px; }
+section#content #news #list #navigation a.bottom { float:left; display:block; width:24px; height: 25px; background: url(../../img/main_page/nav_arrows.png) top left; }
+section#content #news #list #navigation a.top { float:left; display:block; width:23px; height: 25px; background: url(../../img/main_page/nav_arrows.png) top right; }
+section#content #news #list #navigation a.bottom.stop { background-position: bottom left !important; cursor: default; }
+section#content #news #list #navigation a.top.stop { background-position: bottom right !important; cursor: default; }
+section#content #news #list #navigation a#rss { float:left; display:block; margin-left:40px; padding-right:30px; height: 25px; background: url(../../img/main_page/rss.png) top right no-repeat; }
+
+section#content #sale, section#content #reviews { display:inline-block; vertical-align:top; width: 340px; margin-top:2em; }
+section#content #sale h2, section#content #reviews h2 { -moz-text-shadow: #444 0px 1px 1px; -webkit-text-shadow: #444 0px 1px 1px; text-shadow: #444 0px 1px 1px; }
+section#content #sale { padding-right: 10px; }
+section#content #reviews { }
+
+section#content #sale article { position: relative; padding-bottom:1.5em !important; padding-top:1.5em !important; border-top: 1px solid #e6e6e6 }
+section#content #sale article .section { display: none; }
+section#content #sale article:FIRST-CHILD { background: #ff4200 !important }
+section#content #sale article h3 { position: relative; margin:0; padding:0; }
+section#content #sale article h3 .pict {display:block; width:235px; height: 105px; margin-top:0.4em; background: url(../../img/main_page/bg_reviews_img.png); padding:5px 0 0 5px;  }
+section#content #sale article .price { position:absolute; bottom:2.8em; left:245px; font-size: 140%; }
+section#content #sale a.refresh { color:#E80F8A; border-bottom: 1px dashed; text-decoration: none; line-height:180%; font-size:180% }
+section#content #sale a.refresh:hover { border-bottom: none; }
+
+section#content #reviews article { position: relative; padding-bottom:1.5em; padding-top:1.5em; border-top: 1px solid #e6e6e6 }
+section#content #reviews article time { margin:0; padding:0; }
+section#content #reviews article h3 { position: relative; margin:0; padding:115px 0 0.5em 0; }
+section#content #reviews article h3 .pict { position: absolute; top:0; left:0; width:235px; height: 105px; background: url(../../img/main_page/bg_reviews_img.png); padding:5px 0 0 5px;  }
+section#content #reviews article p { padding:0; margin:0; font-size:90%; line-height:1.3em; }
+section#content #reviews article .comments { padding-left:19px; background:url(../../img/main_page/comments_article.png) left bottom no-repeat; color:#8b8b8b; font-style: italic; padding-top:1em }
+
+/* Footer */
+footer { color:#fff; font-size:87.5%; vertical-align:top; line-height:1.2em; position:relative; padding:1em 0; width: 100%; background: #434343; margin-top:60px }
+footer #copy { margin-left:2%; }
+footer a { color: #fff; }
+footer ul { position: absolute; left:40%; top:1em; margin: 0; padding:0; padding-left:1em; border-left:1px solid #fff; list-style-type: none; }
+
+/* 
+===================
+Страница подборщика
+===================
+ */
+
+div.salons-map { width:100%; height:450px; display:none }
+
+/* Подборщик цены */
+section#pick { width:100%; padding:14px; margin:-18px 0 0 -14px; background: #eff3f6; border-bottom: 1px solid #dee1e3; }
+section#pick #price-box { display: none; padding:2em 0;  }
+section#pick #price { width:500px; margin:0 auto; }
+section#pick .ui-slider { position:relative; margin:0 auto; height:32px; background: url(../../img/pick/bg_pick_price.png) center; border: none; }
+section#pick .ui-slider .ui-slider-handle { position: absolute; margin-left:-9px; z-index: 120; cursor: default; height:18px; width:18px; top:6px; text-decoration: none; background: url(../../img/pick/handle.png) center no-repeat; outline: none; }
+section#pick .ui-slider .ui-slider-range { position: absolute; top:0; height:100%; background: url(../../img/pick/bg_pick_price.png) bottom; z-index: 1; display: block; border: 0; }
+section#pick .ui-slider .ui-slider-handle span { font-size:87.5%; width:100px; margin-left:-50px; text-align:center; position: absolute; display: block; text-align:center; left:50%; top:-25px; color:#d90e81; font-weight: bold; }
+section#pick .ui-slider-horizontal .ui-slider-range-min { left: 0; }
+section#pick .ui-slider-horizontal .ui-slider-range-max { right: 0; }
+section#pick .left_bg { display: block; width:20px; height:32px; position: absolute; left:-20px; background: url(../../img/pick/bg_pick_price.png) top left; top:0; z-index:100;  }
+section#pick .right_bg { display: block; width:20px; height:32px; position: absolute; right:-20px; background: url(../../img/pick/bg_pick_price.png) top right; top:0; z-index:100;  }
+section#pick #price span.scale { font-size:87.5%; display: block; padding-top:32px; position: absolute; top:1px; left:-3px; background: url(../../img/pick/scale.png) center top no-repeat; }
+
+/* Список салонов */
+section#list article { position:relative; min-height: 120px; padding-top:2.5em; padding-bottom: 1em; }
+section#list article h2 { position:relative; text-transform: none; padding-top:0; padding-bottom: 0.2em; }
+section#list article h2 a { position: relative; padding-left: 138px; }
+section#list article h2 a span.pict { position: absolute; top:0; left:0; padding: 4px; width:120px; height: 90px; background: url(../../img/list/border_salon_list.png) }
+section#list article p { padding:0; padding-left: 138px; line-height:1.4em; font-size:87.5%; }
+section#list article .links { margin-top:0.5em; padding-left: 138px; }
+section#list article .links a { display:inline-block; margin-right:1em; height: 32px; line-height: 32px; padding:0; padding-left:38px; background: url(../../img/list/links.png) left no-repeat; }
+section#list article .links a.comment { background-position: top left; }
+section#list article .links a.zapis { background-position: 0 -32px; }
+section#list article .links a.contact { background-position: 0 -64px; }
+section#list article .links a.shop { background-position: left bottom; }
+
+/*  
+==============
+Страница салона
+==============
+*/
+
+/* Меню-Табы */
+ul#tabs { position:relative; margin:0 auto; padding:1em 0; padding-left:100px; list-style-type: none; }
+ul#tabs li { display: inline; margin-right: 0.5em; padding:0.4em 0.5em }
+ul#tabs li a { text-decoration: none; border-bottom: 1px dashed }
+ul#tabs li a:hover { border: none; }
+ul#tabs li.active { background: #71c6d3 url("../../img/bg_nav.png") bottom center; }
+ul#tabs li.active a { border: none; text-decoration: none; color:white; text-shadow: #000 0 1px 3px }
+
+/* Информация о компании */
+.tabs_content.about { min-height: 250px; position: relative; }
+.tabs_content.about span.pict { position:absolute; top:0; display: block; width: 215px; height: 165px; background: url(../../img/item/bg_img.png); padding:15px 0 0 15px; }
+.tabs_content.about a.online { position:absolute; left:15px; color:white; text-decoration:none; border-radius: 4px; top:180px; text-align:center; line-height:38px; font-size:1.3em; text-shadow:0px 1px 1px #444; display: block; width:201px; height: 38px; background: url("../../img/bg_nav.png") center bottom; }
+.tabs_content.about .description { padding-left: 235px; padding-top:15px; }
+
+/* Галерея */
+.tabs_content.gallery { text-align: center; }
+.tabs_content.gallery a { //float:left; //display:block; display: inline-block; padding:15px; width: 200px; height: 150px; background: url(../../img/item/bg_img.png) }
+
+/* Онлайн-запись в салон */
+section#online_statusbar { position:relative; width:700px; height:60px; margin:1em auto; margin-bottom:3em; }
+section#online_statusbar .step { position:absolute; bottom:0; display:block; width:60px; height:60px; background:url(../../img/request/icons.png); }
+section#online_statusbar .step span { position: absolute; font-size:10px; color:#666; display: block; width:60px; left:0; top:65px; text-align: center; }
+
+section#online_statusbar .step.step-1 { left:0; background-position: 0 0; }
+section#online_statusbar .step.step-1.active { left:0; background-position: -60px 0; }
+
+section#online_statusbar .step.step-2 { left:160px; background-position: 0 -60px; }
+section#online_statusbar .step.step-2.active { left:160px; background-position: -60px -60px; }
+
+section#online_statusbar .step.step-3 { left:320px; background-position: 0 -120px; }
+section#online_statusbar .step.step-3.active { left:320px; background-position: -60px -120px; }
+
+section#online_statusbar .step.step-4 { left:480px; background-position: 0 -180px; }
+section#online_statusbar .step.step-4.active { left:480px; background-position: -60px -180px; }
+
+section#online_statusbar .step.step-5 { left:640px; background-position: 0 -240px; }
+section#online_statusbar .step.step-5.active { left:640px; background-position: -60px -240px; }
+
+section#online_statusbar .line { position: absolute; background:#cecece; top:53px; width:140px; height:3px; display: block; }
+section#online_statusbar .line.active { background:#86c386; }
+section#online_statusbar .line.line-1 { left:40px; }
+section#online_statusbar .line.line-2 { left:200px; }
+section#online_statusbar .line.line-3 { left:360px; }
+section#online_statusbar .line.line-4 { left:520px; }
+
+/* Диалог с пользователем при записи */
+section#steps div.step { margin-top:2em; }
+section#steps div.step-2, section#steps div.step-3, section#steps div.step-4, section#steps div.step-5 { display: none; }
+
+/* Выбор мастера */
+section#steps div.step-2 a.master { vertical-align:top; position:relative; text-align:center; text-decoration:none; display: inline-block; width:165px; padding:5px 5px 10px 5px; border-radius: 5px; }
+section#steps div.step-2 a.master.active, section#steps div.step-2 a.master:hover { background: url(../../img/bg_body.png);  }
+section#steps div.step-2 a.master span.img { display:block; overflow:hidden; margin:0.5em auto; width:100px; height:100px; padding:5px; background: url(../../img/request/photo_bg.png) }
+section#steps div.step-2 a.master span.name { display: block; font-weight:bold; }
+section#steps div.step-2 a.master span.post { display: block; color:#666; }
+/* END Диалог с пользователем при записи */
+
+/* Дата и время */
+section#steps div.step-3 table#datetime { width:700px; text-align: center; margin:0; padding:0; }
+section#steps div.step-3 table#datetime tr, section#steps div.step-3 table#datetime tr td { margin:0; padding:0; }
+section#steps div.step-3 table#datetime tr td.date, section#steps div.step-3 table#datetime tr td.time { width:340px;  border:1px solid #ccc; border-bottom: 0; vertical-align: top; }
+section#steps div.step-3 table#datetime tr td.padding { width:20px;border-bottom:1px solid #ccc; }
+
+section#steps div.step-3 table#datetime tr td.legend { border: 1px solid #ccc; border-top:0; padding:1em 0; }
+section#steps div.step-3 table#datetime tr td.legend div { position:relative; display: inline; margin:0 50px; }
+section#steps div.step-3 table#datetime tr td.legend div span { position:absolute; bottom:0; left:-50px; border-radius:3px; display:block; width:40px; height:20px; background: #aaa; }
+
+section#steps div.step-3 #calendar { width:100%; }
+section#steps div.step-3 #calendar .ui-datepicker-header { position:relative; display:block; height:40px; background:#00a5ba }
+section#steps div.step-3 #calendar .ui-datepicker-header .ui-datepicker-title { color:#fff; line-height:40px; }
+
+section#steps div.step-3 #calendar .ui-datepicker-header .ui-datepicker-prev, 
+section#steps div.step-3 #calendar .ui-datepicker-header .ui-datepicker-next { position:absolute; display: block; height:40px; line-height: 40px; color:#fff; }
+section#steps div.step-3 #calendar .ui-datepicker-header .ui-datepicker-prev { left:15px; }
+section#steps div.step-3 #calendar .ui-datepicker-header .ui-datepicker-next { right:15px; }
+
+section#steps div.step-3 #calendar .ui-datepicker-calendar { margin:15px; width:310px; } 
+section#steps div.step-3 #calendar .ui-datepicker-calendar tr th { color:#444; padding:0.3em 0; }
+
+section#steps div.step-3 #calendar .ui-datepicker-calendar tr td { position:relative; color:#ccc; border:1px solid #ccc; border-top:0; border-left:0; height:30px; }
+section#steps div.step-3 #calendar .ui-datepicker-calendar tr td:last-of-type { border-right: 0 }
+section#steps div.step-3 #calendar .ui-datepicker-calendar tr:last-of-type td { border-bottom: 0 }
+
+section#steps div.step-3 #calendar .ui-datepicker-calendar tr td a { display:block; width:100%; height:30px; line-height:30px; text-decoration:none; color:#444; }
+section#steps div.step-3 #calendar .ui-datepicker-calendar tr td a.ui-state-hover, section#steps div.step-3 #calendar .ui-datepicker-calendar tr td a.ui-state-active { background:#E80F89; color:#fff; }
+section#steps div.step-3 #calendar .ui-datepicker-calendar tr td a.ui-state-active { font-weight:bold; }
+
+section#steps div.step-3 #time { width:100%; }
+section#steps div.step-3 #time .header { height: 40px; line-height: 40px; color:#fff; background: #00a5ba; }
+section#steps div.step-3 #time table { margin:0 15px; text-align: left; }
+section#steps div.step-3 #time table tr {border-bottom:1px solid #ccc}
+section#steps div.step-3 #time table tr td { padding: 1em 0.5em; }
+section#steps div.step-3 #time table tr td.title { text-align: center; font-weight:bold; }
+section#steps div.step-3 #time table a, section#steps div.step-3 #time table span { text-decoration: none; color:#444; display:inline-block; padding:2px 3px; margin:2px 0; border-radius: 5px; }
+section#steps div.step-3 #time table a:hover { background:#E80F89; color:#fff; }
+section#steps div.step-3 #time table span { background:#ccc; }
+section#steps div.step-3 #time table span.busy { background: #00A5BA; color: #fff; }
+/* END Дата и время */
