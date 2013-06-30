@@ -19,10 +19,12 @@
 
 		<!-- Стили -->
 		<link rel="stylesheet" href="lib/css/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="lib/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
 		<!-- Скрипты -->
 		<script src="http://yandex.st/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="http://yandex.st/jquery-ui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/fancybox/jquery.fancybox.pack.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/js/main.js" type="text/javascript" charset="utf-8"></script>
 		
 		<!-- jQuery.Dropdown -->
@@ -43,6 +45,25 @@
 					<a href="http://facebook.com" title="4trendy.ru на Facebook"><img src="img/social/facebook.png" alt="4trendy.ru на Facebook"/></a>
 					<a href="http://vk.com" title="4trendy.ru ВКонтакте"><img src="img/social/vk.png" alt="4trendy.ru ВКонтакте"/></a>
 				</div>
+
+				<noindex>
+					<a class="auth das" href="#popup_auth">Вход для партнёров</a>
+					<div id="popup_auth" style="display:none; width:300px; text-align:center">
+						<p class="mini">
+							Для доступа в закрытую часть сайта необходимо ввести адрес электронной почты и пароль.<br/>
+							Если вы забыли пароль, напишите нам на почту: <a href="mailto:info@4trendy.ru">info@4trendy.ru</a>
+						</p>
+						<form>
+							<div class="input-prepend">
+								<span class="add-on"><strong><img src="img/data/input/username.png" /></strong></span><input type="text" placeholder="Адрес электронной почты" />
+							</div>
+							<div class="input-prepend">
+								<span class="add-on"><strong><img src="img/data/input/key.png" /></strong></span><input type="password" placeholder="Пароль" />
+							</div>
+							<button class="btn">Авторизоваться</button>
+						</form>
+					</div>
+				</noindex>
 			</header>
 			<nav>
 				<menu>
